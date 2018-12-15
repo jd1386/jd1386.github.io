@@ -9,7 +9,7 @@ permalink: /about/
 - React
 - Node.js/Express
 - Ruby/Ruby on Rails
-- MySQL,PostgreSQL
+- PostgreSQL, MySQL, MongoDB
 - jQuery, HTML, CSS, SCSS, Git
 - AWS EC2, S3, Cloudfront, LightSail
 - DigitalOcean
@@ -24,7 +24,7 @@ permalink: /about/
 - [Live Site](http://ec2-54-180-107-245.ap-northeast-2.compute.amazonaws.com/)
 - 프로젝트 설명
   - [아이콘 루프](https://icon.foundation/?lang=en)와 [코드스테이츠](https://codestates.com)간 4주 기업 협업 프로젝트
-  - dApp 개발자들을 위해 아이콘 루프의 dApp개발용 test ICX를 좀 더 interative하고 자동화된 방법으로 지급하는 웹사이트
+  - dApp 개발자들을 위해 아이콘 루프의 dApp개발용 test ICX를 좀 더 interactive하고 자동화된 방법으로 지급하는 웹사이트
 - 프로젝트 기술 스택
   - Python/Django
   - React
