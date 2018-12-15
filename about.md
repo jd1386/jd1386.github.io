@@ -20,7 +20,7 @@ permalink: /about/
 
 ## Projects
 
-### ***BlockPang***, 2018.11 - 2018.12
+#### ***BlockPang***, 2018.11 - 2018.12
 - [Live Site](http://ec2-54-180-107-245.ap-northeast-2.compute.amazonaws.com/)
 - 프로젝트 설명
   - [아이콘 루프](https://icon.foundation/?lang=en)와 [코드스테이츠](https://codestates.com)간 4주 기업 협업 프로젝트
@@ -45,7 +45,7 @@ permalink: /about/
   - [최보연](https://github.com/boyeon555) 개발자 ([Icon Loop](https://icon.foundation))
 
 
-### ***Frontlist***, 2014.10 - 현재
+#### ***Frontlist***, 2014.10 - 현재
 - [Live Site](https://frontlist.net)
 - 프로젝트 설명
   - 글로벌 출판사들을 위한 판권 거래 정보 웹사이트

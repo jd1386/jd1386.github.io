@@ -3,6 +3,18 @@
 
 @import 'minima';
 
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
 li {
   margin-bottom: 0.1em;
+}
+
+p {
+  font-size: 1.15em;
+}
+
+.post-content h3 {
+  font-weight: 600;
 }

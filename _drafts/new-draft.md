@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 블로그 시작
-date: 2018-12-13 11:00:00 +0900
+title: draft
+date: 2018-12-13 18:00:00 +0900
 categories: blog
 ---
 
