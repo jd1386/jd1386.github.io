@@ -26,10 +26,10 @@ github_username: jd1386
 markdown: kramdown
 theme: minima
 highlighter: rouge
-pagination:
-  enabled: true
+future: true
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

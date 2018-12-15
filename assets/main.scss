@@ -41,3 +41,10 @@ a.site-title {
 .post-content h3 {
   font-weight: 600;
 }
+
+.profile-image {
+  border-radius: 50%;
+  -webkit-box-shadow: 7px 7px 30px -6px rgba(117, 117, 117, 0.67);
+  -moz-box-shadow: 7px 7px 30px -6px rgba(117, 117, 117, 0.67);
+  box-shadow: 7px 7px 30px -6px rgba(117, 117, 117, 0.67);
+}
