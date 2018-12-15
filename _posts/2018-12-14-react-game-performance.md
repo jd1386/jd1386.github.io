@@ -3,6 +3,7 @@ layout: post
 title: React 게임 퍼포먼스 개선하기
 date: 2018-12-14 13:00:00 +0900
 categories: blog
+tags: react
 ---
 
 ```
