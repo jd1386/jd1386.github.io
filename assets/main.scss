@@ -17,6 +17,11 @@ p {
 
 a:hover {
   text-decoration: none;
+  color: #2a7ae2;
+}
+
+a:visited {
+  color: #2a7ae2;
 }
 
 a.site-title {
@@ -47,4 +52,8 @@ a.site-title {
   -webkit-box-shadow: 7px 7px 30px -6px rgba(117, 117, 117, 0.67);
   -moz-box-shadow: 7px 7px 30px -6px rgba(117, 117, 117, 0.67);
   box-shadow: 7px 7px 30px -6px rgba(117, 117, 117, 0.67);
+}
+
+h3.posts {
+  margin: 0;
 }
