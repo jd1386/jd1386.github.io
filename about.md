@@ -27,11 +27,11 @@ permalink: /about/
 ## Projects
 
 #### ***BlockPang***, 2018.11 - 2018.12
-- [Live Site](http://ec2-54-180-107-245.ap-northeast-2.compute.amazonaws.com/)
-- 프로젝트 설명
+- [Live Site](http://ec2-54-180-107-245.ap-northeast-2.compute.amazonaws.com/), [Github](https://github.com/jd1386/blockpang-client)
+- 프로젝트 내용
   - [아이콘 루프](https://icon.foundation/?lang=en)와 [코드스테이츠](https://codestates.com)간 4주 기업 협업 프로젝트
-  - dApp 개발자들을 위해 아이콘 루프의 dApp개발용 test ICX를 좀 더 interactive하고 자동화된 방법으로 지급하는 웹사이트
-- 프로젝트 기술 스택
+  - dApp 개발자들을 위해 아이콘 루프의 dApp개발용 test ICX를 좀 더 interactive하고 자동화된 방법으로 지급하는 오픈소스 프로젝트
+- 기술 스택
   - Python/Django
   - React
   - Icon loop SDK
@@ -46,18 +46,43 @@ permalink: /about/
   - [최기홍](https://github.com/khchoi0301) (Backend)
   - [김성은](https://github.com/sunnysid3up) (Backend)
 - 기술 발표
-  - ["조금 더 쾌적한 리액트 게임 만들기"](https://docs.google.com/presentation/d/1gPm73PNdEVNUoTyOmTfFY9324qAVQj93ZNllMOYofdE/edit?usp=sharing) 코드스테이츠 데모데이 팀별 기술발표에서 발표한 내용
+  - ["조금 더 쾌적한 리액트 게임 만들기"](https://docs.google.com/presentation/d/1gPm73PNdEVNUoTyOmTfFY9324qAVQj93ZNllMOYofdE/edit?usp=sharing) - 코드스테이츠 데모데이 팀별 기술발표
 - Reference
   - [최보연](https://github.com/boyeon555) 개발자 ([Icon Loop](https://icon.foundation))
+- [관련 포스트](#)
 
+<hr>
+
+#### ***뉴스 읽어주는 Sunny***, 2018.10 - 2018.11
+- [Live Site](#), [Github](#)
+- 프로젝트 내용
+  - [코드스테이츠](https://codestates.com)내 2주 프로젝트
+  - Naver Clova TTS(Text to Speech) API를 이용하여 네이버 뉴스에서 현재 시간 가장 인기있는 분야별 뉴스를 유저에게 읽어주는 웹앱
+- 기술 스택
+  - Node.js/Express
+  - MySQL
+  - Cheerio
+  - React
+  - Naver Clova TTS API
+  - AWS EC2, S3
+- 수행 업무
+  - Project 기획자 및 Project Manager로서 총 4명의 개발팀을 리드
+  - Architecture 설계
+  - Node.js/Express, MySQL 등을 이용한 백엔드 개발 전반
+  - Cheerio 및 Cron등을 이용해 네이버 뉴스 자동 Crawling
+- 기술 발표
+  - ["뉴스 읽어주는 Sunny의 아키텍쳐"](https://docs.google.com/presentation/d/1FC1GqfmKywA_7UQ0lRqyHGq0wyWMEvxYe-PCewGy5MM/edit?usp=sharing) - 코드스테이츠 팀별 기술발표
+- [관련 포스트](#)
+
+<hr>
 
 #### ***Frontlist***, 2014.10 - 현재
 - [Live Site](https://frontlist.net)
-- 프로젝트 설명
+- 프로젝트 내용
   - 글로벌 출판사들을 위한 판권 거래 정보 웹사이트
   - Hachette Children's Group (UK), Penguin Random House (US) 등 세계 유수의 출판사 고객 확보
   - Primer, Strong Ventures 등 투자 유치
-- 프로젝트 기술 스택
+- 기술 스택
   - Ruby/Ruby on Rails
   - PostgreSQL
   - AWS S3/Cloudfront
@@ -68,6 +93,7 @@ permalink: /about/
   - 리드 개발자로서 아키텍쳐 설계 및 개발 전반
 - Reference
   - Bae, Ki Hong - [Strong Ventures](http://www.strongvc.com/) 
+- [관련 포스트](#)
 
 ## Presentations
 
