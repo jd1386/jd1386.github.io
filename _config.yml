@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   개발자 이정도 블로그
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://jd1386.github.io/' # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 'lee_jungdo'
+twitter_username:
 github_username: jd1386
 
 # Build settings

@@ -8,7 +8,6 @@ permalink: /about/
 ### 이정도 (Jungdo Lee)
 - email <mailto:lee.jungdo@gmail.com>
 - github <a href="https://github.com/jd1386" target="_blank">jd1386</a>
-- twitter <a href="https://twitter.com/lee_jungdo" target="_blank">lee_jungdo</a>
 
 
 ## Tech Stack
