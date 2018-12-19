@@ -27,6 +27,7 @@ markdown: kramdown
 theme: minima
 highlighter: rouge
 future: true
+google_analytics: UA-131204696-1
 plugins:
   - jekyll-feed
   - jekyll-paginate
