@@ -2,7 +2,6 @@
 layout: post
 title: Mongo Shell에서 자주 쓰이는 명령어
 date: 2018-07-30 14:00:00 +0900
-comments: true
 categories: blog
 ---
 
