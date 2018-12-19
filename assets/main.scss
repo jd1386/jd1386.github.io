@@ -12,12 +12,12 @@ ul {
 }
 
 li {
-  font-size: 1.15em;
+  font-size: 1.15rem;
   margin-bottom: 0.1em;
 }
 
 p {
-  font-size: 1.15em;
+  font-size: 1.15rem;
   margin-bottom: 30px;
 }
 
@@ -43,6 +43,10 @@ a.site-title {
   position: fixed;
   width: 100%;
   background: #fff;
+}
+
+.post-title {
+  font-weight: 600;
 }
 
 .page-content {

@@ -54,7 +54,7 @@ permalink: /about/
 <hr>
 
 #### ***뉴스 읽어주는 Sunny***, 2018.10 - 2018.11
-- [Live Site](#), [Github](#)
+- [Live Site](#), [Github](#), [관련 포스트]({% post_url 2018-12-19-2주-프로젝트-뉴스-읽어주는-Sunny-회고 %})
 - 프로젝트 내용
   - [코드스테이츠](https://codestates.com)내 2주 프로젝트
   - Naver Clova TTS(Text to Speech) API를 이용하여 네이버 뉴스에서 현재 시간 가장 인기있는 분야별 뉴스를 유저에게 읽어주는 웹앱
@@ -72,7 +72,6 @@ permalink: /about/
   - Cheerio 및 Cron등을 이용해 네이버 뉴스 자동 Crawling
 - 기술 발표
   - ["뉴스 읽어주는 Sunny의 아키텍쳐"](https://docs.google.com/presentation/d/1FC1GqfmKywA_7UQ0lRqyHGq0wyWMEvxYe-PCewGy5MM/edit?usp=sharing) - 코드스테이츠 팀별 기술발표
-- [관련 포스트](#)
 
 <hr>
 
