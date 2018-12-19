@@ -22,12 +22,14 @@ url: 'https://jd1386.github.io/' # the base hostname & protocol for your site, e
 twitter_username:
 github_username: jd1386
 
+
 # Build settings
 markdown: kramdown
 theme: minima
 highlighter: rouge
 future: true
 google_analytics: UA-131204696-1
+disqus: jungdolee
 plugins:
   - jekyll-feed
   - jekyll-paginate
