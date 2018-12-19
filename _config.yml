@@ -29,7 +29,8 @@ theme: minima
 highlighter: rouge
 future: true
 google_analytics: UA-131204696-1
-disqus: jungdolee
+disqus: 
+  shortname: jungdolee
 plugins:
   - jekyll-feed
   - jekyll-paginate
