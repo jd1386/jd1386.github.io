@@ -3,6 +3,7 @@ layout: post
 title: jQuery의 animate 함수와 css 함수의 차이
 date: 2018-07-17 14:00:00 +0900
 categories: blog
+tags: javascript
 ---
 
 The .animate() method only works on CSS properties that have **numeric values**. 

@@ -3,6 +3,7 @@ layout: post
 title: argv를 이용한 arguments passing
 date: 2018-08-08 13:00:00 +0900
 categories: blog
+tags: node
 ---
 
 ```javascript

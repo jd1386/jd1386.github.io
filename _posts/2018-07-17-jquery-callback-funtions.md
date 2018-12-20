@@ -3,6 +3,7 @@ layout: post
 title: jQuery에서 콜백 함수
 date: 2018-07-17 14:00:00 +0900
 categories: blog
+tags: javascript
 ---
 
 # jQuery Callback Functions

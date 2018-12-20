@@ -3,6 +3,7 @@ layout: post
 title: fs 모듈로 파일 읽고 쓰기
 date: 2018-08-06 13:00:00 +0900
 categories: blog
+tags: node
 ---
 
 #### Writing to Files
