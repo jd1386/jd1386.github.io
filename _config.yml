@@ -22,15 +22,16 @@ url: 'https://leejungdo.com/' # the base hostname & protocol for your site, e.g.
 twitter_username:
 github_username: jd1386
 
-
 # Build settings
 markdown: kramdown
 theme: minima
 highlighter: rouge
 future: true
 google_analytics: UA-131204696-1
-disqus: 
+disqus:
   shortname: jungdolee
+paginate: 8
+paginate_path: '/page/:num/'
 plugins:
   - jekyll-feed
   - jekyll-paginate
