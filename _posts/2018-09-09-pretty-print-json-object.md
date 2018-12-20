@@ -3,6 +3,7 @@ layout: post
 title: Pretty Print JSON Object
 date: 2018-09-09 14:00:00 +0900
 categories: blog
+tags: javascript
 ---
 
 API 사용 중 JSON으로 된 결과를 받아오는 경우 단순히 console.log(json)를 찍으면 아래와 같이 나온다.
