@@ -37,7 +37,7 @@ viewport에 따른 컴포넌트 렌더링이라는 건 유저가 화면에서 �
 그 다음 `yarn add react-on-screen` 또는 `npm install react-on-screen`으로 react-on-screen을 설치한다.
 
 `App.js`에서 다음과 같이 `TrackVisibility`를 불러와서 Users, Posts, Comments 세 개의 컴포넌트를 감싸준다. 
-  - `offset`값으로 해당 컴포넌트의 최상단이 화면에 보이기 시작한 순간부터 얼만큼의 픽셀을 스크롤 다운해야 visible 할 것인지를 설정할 수 있다. 300을 설정했다면 컴포넌트의 최상단에서 300px 지점이 viewport에 들어오면 컴포넌트는 visible하다고 정의할 수 있다.
+  - `offset`값으로 해당 컴포넌트의 최상단이 화면에 보이기 시작한 순간부터 얼만큼의 픽셀을 스크롤 다운해야 visible 할 것인지를 설정할 수 있다. 300을 설정했다면 컴포넌트의 최상단에서 300px 아래 지점이 viewport에 들어오면 컴포넌트는 visible하다고 정의할 수 있다.
   - `once`는 컴포넌트가 단 한번이라도 visible해지면 event listener를 삭제해서 더이상의 viewport tracking을 하지 않는다는 것이다. 
 
 #### App.js
