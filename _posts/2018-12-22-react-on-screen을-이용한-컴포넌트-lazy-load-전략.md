@@ -21,7 +21,7 @@ viewport에 따른 컴포넌트 렌더링이라는 건 유저가 화면에서 �
 
 ### react-on-screen 사용하기
 
-유저의 viewport에 따라 컴포넌트가 lazy load 되도록 도와주는 [react-on-screen](https://github.com/fkhadra/react-on-screen)을 활용해서 컴포넌트 lazy load를 구현해보자. 먼저 아래 데모 사이트를 확인해보고 우리가 만들려고 하는 게 뭔지 한번 감을 잡아보자.
+유저의 viewport에 특정 컴포넌트의 존재하는지 여부를 쉽게 확인하도록 도와주는 [react-on-screen](https://github.com/fkhadra/react-on-screen)을 활용해서 컴포넌트 lazy load를 구현해보자. 먼저 아래 데모 사이트를 확인해보고 우리가 만들려고 하는 게 뭔지 한번 감을 잡아보자.
 
 - [데모 사이트](https://leejungdo.com/react-on-screen-test/)
 - [소스 코드](https://github.com/jd1386/react-on-screen-test)
