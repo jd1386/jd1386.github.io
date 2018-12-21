@@ -235,6 +235,9 @@ export default Comments;
 ```
 
 ### 데모 사이트
+
+<img src="/assets/img/react-on-screen-example.gif">
+
 기본적인 구현은 끝났다. 다시 정리하자면 [데모 사이트](https://leejungdo.com/react-on-screen-test/)는 총 3개의 컴포넌트를 사용하고 각각 정해진 갯수의 오브젝트를 API로 불러와서 렌더할 것이다.
 - Users 10명
 - Posts 50개
@@ -242,9 +245,17 @@ export default Comments;
 
 여기서 핵심은 각 컴포넌트가 유저의 viewport에 있는 지 없는 지를 `react-on-screen`을 활용해서, viewport 안에 있다면 API call해서 해당 리스트를 렌더할 것이고 viewport에 밖에 있다면 아무 것도 하지 않는다는 것이다. 
 
-<img src="/assets/img/react-on-screen-example.gif">
+#### 데모 사이트의 크롬 개발자 도구 'Network' 결과
+<img src="/assets/img/react-on-screen-example-performance.png">
 
-User 10명, Post 50개, Comments 500개를 모두 한번에 불러오고 렌더해줘야 한다면 어떨까? 아마도 유저가 감내하기에는 상당히 버거운 시간일 가능성이 높다. 그리고 유저를 차치하더라도 엔지니어링적으로도 굳이 수백개의 요소를 모두 불러오고 나서 화면에 렌더한다는 건 결코 합리적이지 않다. 유저가 한 화면에 볼 수 있는 요소라 해봤자 고작 수십개 수준 아닐까. 그럼 그 수십개의 요소만 렌더하고 필요할 때마다 lazy load하는 게 더 합리적인 선택이지 않을까.
+데모 사이트를 크롬 개발자 도구 Network탭으로 확인해본 결과 최초로 문서를 로드하는데 145byte에 87ms가 소요되었고, 이후 
+- users를 불러와서 렌더하는데 184byte에 151ms
+- posts 215byte에 154ms
+- comments 216byte에 155ms
+
+가 소요되었다. 만약 컴포넌트별로 lazy load가 적용되지 않았다면 전체 문서를 렌더하는데 각 소요시간의 총합인 547ms정도가 소요되었을 것으로 추측할 수 있다.
+
+이는 유저가 감내하기에는 상당히 버거운 시간이다. 그리고 유저를 차치하더라도 엔지니어링적으로도 굳이 수백개의 요소를 모두 불러오고 나서 화면에 렌더한다는 건 결코 합리적이지 않다. 유저가 한 화면에 볼 수 있는 요소라 해봤자 고작 수십개 수준 아닐까. 그럼 그 수십개의 요소만 먼저 렌더하고 나머지 요소들은 필요할 때마다 lazy load하는 게 더 합리적인 선택이지 않을까.
 
 ### 배운 점
 라이브러리를 사용하지 않고 vanilla javascript로 구현할 수 있다는 점은 분명하지만 리액트 프로젝트를 위해 이미 잘 만들어진 `react-on-screen`을 써보는 것도 꽤 괜찮은 옵션같다. 실제 프로젝트에서도 써봐야겠지만 데모 사이트에서 보더라도 사용성이나 속도면에서 크게 떨어지는 것 같지 않아서 실제 프로젝트에도 적용해보고 싶다.
