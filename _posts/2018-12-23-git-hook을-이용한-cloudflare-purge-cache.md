@@ -45,6 +45,9 @@ curl -X POST "https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ZONE_ID}/p
 
   <img src="/assets/img/cloudflare-cached.png" width="50%">
 
+  curl을 이용해도 확인할 수 있다.
+  `curl -svo /dev/null https://leejungdo.com`
+
   이제 git hook을 이용해 git push 이후 매번 자동으로 Cloudflare cached content가 purge 되고 새롭게 caching 될 것이다.
 
   Cloudflare API는 [Cloudflare API 공식 문서](https://api.cloudflare.com/)에서 확인할 수 있다.
