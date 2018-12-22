@@ -43,7 +43,7 @@ curl -X POST "https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ZONE_ID}/p
 
   이제 새로운 포스트를 작성하거나 수정한 후 git push해보자. 그리고 잠시 후 포스트를 브라우저에서 불러오면 컨텐츠가 Cloudflare에서 제공된다는 걸 확인할 수 있다.
 
-  <img src="/assets/img/cloudflare-cached.png" width="50%">
+  <img src="/assets/img/cloudflare-cached.png">
 
   curl을 이용해도 확인할 수 있다.
   `curl -svo /dev/null https://leejungdo.com`
