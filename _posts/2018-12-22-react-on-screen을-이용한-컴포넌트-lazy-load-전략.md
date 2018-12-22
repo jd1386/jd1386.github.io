@@ -6,7 +6,7 @@ categories: blog
 tags: react
 ---
 
-### The less, the better
+### The less, the better 
 웹사이트 퍼포먼스의 rule no.1이 있다면 뭘까. 아마도 DOM node 갯수의 최소화일 것이다. 렌더링 해야하는 DOM node가 적을 수록 브라우저는 DOM tree 전후 비교도 훨씬 빨리할 것이고 그만큼 rendering과 painting에 소요되는 시간도 줄 것이다.
 
 네이버 뉴스의 경우, 유저가 기사 제목을 클릭하면 기사 내용이 렌더된다. 유저는 기사 내용을 마우스로 스크롤 다운하면서 기사를 한줄 한줄 읽게 된다. 이 때까지만 해도 화면 아래에 있던 댓글 목록은 렌더 되지 않은 상태이다. 유저의 viewport가 댓글 목록 가까이 가면 그제서야 댓글이 렌더된다.
