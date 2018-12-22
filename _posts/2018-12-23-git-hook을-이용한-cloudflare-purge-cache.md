@@ -39,15 +39,19 @@ curl -X POST "https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ZONE_ID}/p
   --data '{"purge_everything":true}'
   ```
 
-  위 코드는 Cloudflare API를 이용해서 등록한 웹사이트의 cached content를 purge하라는 POST 명령어이다.
+위 코드는 Cloudflare API를 이용해서 등록한 웹사이트의 cached content를 purge하라는 POST 명령어이다.
 
-  이제 새로운 포스트를 작성하거나 수정한 후 git push해보자. 그리고 잠시 후 포스트를 브라우저에서 불러오면 컨텐츠가 Cloudflare에서 제공된다는 걸 확인할 수 있다.
+이제 새로운 포스트를 작성하거나 수정한 후 git push해보자. 그리고 잠시 후 포스트를 브라우저에서 불러오면 컨텐츠가 Cloudflare에서 제공된다는 걸 확인할 수 있다.
 
-  <img src="/assets/img/cloudflare-cached.png">
+<img src="/assets/img/cloudflare-cached.png">
 
-  curl을 이용해도 확인할 수 있다.
-  `curl -svo /dev/null https://leejungdo.com`
+curl을 이용해도 확인할 수 있다.
+`curl -svo /dev/null https://leejungdo.com`
 
-  이제 git hook을 이용해 git push 이후 매번 자동으로 Cloudflare cached content가 purge 되고 새롭게 caching 될 것이다.
+이제 git hook을 이용해 git push 이후 매번 자동으로 Cloudflare cached content가 purge 되고 새롭게 caching 될 것이다.
 
-  Cloudflare API는 [Cloudflare API 공식 문서](https://api.cloudflare.com/)에서 확인할 수 있다.
+Cloudflare API는 [Cloudflare API 공식 문서](https://api.cloudflare.com/)에서 확인할 수 있다.
+
+
+### 덧
+purge 이후 변경사항이 실제 반영되는데 몇 분정도의 소요시간이 발생되는 것 같다.
