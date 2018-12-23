@@ -1,6 +1,6 @@
 ---
 layout: post
-title: react-on-screen을 이용한 컴포넌트 lazy load
+title: react-on-screen을 이용한 컴포넌트 lazy load 전략
 date: 2018-12-22 13:00:00 +0900
 categories: blog
 tags: react
