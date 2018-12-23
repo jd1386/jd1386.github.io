@@ -3,7 +3,7 @@ layout: post
 title: git hook을 이용한 Cloudflare purge cache
 date: 2018-12-23 13:00:00 +0900
 categories: blog
-tags: 
+tags: dev-ops
 ---
 
 Github Pages는 기본적으로 Let's Encrypt를 통한 https를 제공하고 CDN을 통해 컨텐츠를 제공한다. 하지만 나는 여기서 한발 더 나아가서 [Cloudflare](https://cloudflare.com)를 이용해서 블로그 로딩 속도를 좀 더 개선해보고 싶었다. Cloudflare는 html, css, javascript 파일들을 minify해서 컨텐츠를 제공하기 때문에 정적 사이트 같은 경우 속도개선 효과가 있다. 또한 전세계 각지의 edge 서버를 운영해서 전세계 어느 곳에서 사이트에 들어오더라도 꽤나 괜찮은 속도를 보장하는 것으로 알려져있다.
