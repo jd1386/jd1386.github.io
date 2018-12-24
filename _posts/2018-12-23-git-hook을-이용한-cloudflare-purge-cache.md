@@ -10,7 +10,7 @@ Github Pages는 기본적으로 Let's Encrypt를 통한 https를 제공하고 CD
 
 Github Pages와 Cloudflare를 연동하는 방법은 다른 글에서 다루도록 하고 이번 글에서는 Github에 블로그 소스 코드를 push 할 때 git hook을 이용해서 기존 Cloudflare의 cached content를 purge(삭제)하는 방법을 알아보도록 하겠다. 
 
-Cached content를 purge해야 하는 이유는 Cloudflare에 cached content가 만료될 때까지 변경 내용이 보이지 않기 때문이다. Cloudflare 사이트에 들어가서 직접 purge하는 방법도 존재하지만 Cloudflare가 제공하는 API와 git hook을 이용하면 훨씬 더 편리하고 자동화된 방법으로 purge를 구현할 수 있다.
+Cached content를 purge해야 하는 이유는 Cloudflare에 저장되어 있는 cached content가 만료되기 전까지 브라우저는 Cloudflare의 cached content를 제공하기 때문에 파일의 변경 사항이 적용된 새로운 파일을 제공하지 않기 때문이다. Cloudflare 사이트에 들어가서 직접 purge하는 방법도 있지만 Cloudflare가 제공하는 API와 git hook을 이용하면 훨씬 더 편리하고 자동화된 방법으로 purge를 구현할 수 있다.
 
 먼저 프로젝트 root directory에서 `ls -a`로 숨겨져있는 모든 폴더까지 리스트업 해보자. 그럼 다음과 같이 숨겨져있던 `.git` 폴더가 나타난다. 참고로 `.git`폴더는 `git init`을 실행할 때 만들어진다.
 
@@ -54,4 +54,4 @@ Cloudflare API는 [Cloudflare API 공식 문서](https://api.cloudflare.com/)에
 
 
 ### 덧
-purge 이후 변경사항이 실제 반영되는데 몇 분정도의 소요시간이 발생되는 것 같다.
+purge 이후 이전 cache가 expire되고 변경사항이 반영되는데 약 5분정도의 소요시간이 발생하는 것 같다.
