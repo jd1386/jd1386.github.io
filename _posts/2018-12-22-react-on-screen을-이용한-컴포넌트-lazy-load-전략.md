@@ -249,10 +249,10 @@ export default Comments;
 #### 데모 사이트의 크롬 개발자 도구 'Network' 결과
 <img src="/assets/img/react-on-screen-example-performance.png">
 
-데모 사이트를 크롬 개발자 도구 Network탭으로 확인해본 결과 최초로 문서를 로드하는데 145byte에 87ms가 소요되었고, 이후 
-- users를 불러와서 렌더하는데 184byte에 151ms
-- posts 215byte에 154ms
-- comments 216byte에 155ms
+데모 사이트를 크롬 개발자 도구 Network탭으로 확인해본 결과 최초로 문서를 로드하는데 87ms가 소요되었고, 이후 
+- users를 불러와서 렌더하는데 151ms
+- posts 154ms
+- comments 155ms
 
 가 소요되었다. 만약 컴포넌트별로 lazy load가 적용되지 않았다면 전체 문서를 렌더하는데 각 소요시간의 총합인 547ms정도가 소요되었을 것으로 추측할 수 있다.
 
