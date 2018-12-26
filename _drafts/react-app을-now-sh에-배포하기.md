@@ -7,4 +7,4 @@ categories: dev-ops
 
 https://github.com/zeit/now-examples/tree/master/create-react-app
 
-https://create-react-app-4np27mc1u.now.sh/
+https://create-react-app-4np27mc1u.now.sh/ (projects/learn/deploy-with-now/react-deploy-test)
