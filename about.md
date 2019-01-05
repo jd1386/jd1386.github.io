@@ -25,8 +25,11 @@ permalink: /about/
 - Web Scraper using Selenium, Cheerio, and etc.
 
 ## Projects
+### ***LearnCo***, 2018.12 - 현재
+- 내용: [코드스테이츠](https://codestates.com) 수강생들을 위한 LMS (Learning Management System)
+- 세부 내용은 향후 추가 예정
 
-#### ***BlockPang***, 2018.11 - 2018.12
+### ***BlockPang***, 2018.11 - 2018.12
 - [Live Site](http://ec2-54-180-107-245.ap-northeast-2.compute.amazonaws.com/), [Github](https://github.com/jd1386/blockpang-client)
 - 프로젝트 내용
   - [아이콘 루프](https://icon.foundation/?lang=en)와 [코드스테이츠](https://codestates.com)간 4주 기업 협업 프로젝트
@@ -53,7 +56,7 @@ permalink: /about/
 
 <hr>
 
-#### ***뉴스 읽어주는 Sunny***, 2018.10 - 2018.11
+### ***뉴스 읽어주는 Sunny***, 2018.10 - 2018.11
 - [Live Site](#), [Github](#), [관련 포스트]({% post_url 2018-12-19-2주-프로젝트-뉴스-읽어주는-Sunny-회고 %})
 - 프로젝트 내용
   - [코드스테이츠](https://codestates.com)내 2주 프로젝트
@@ -75,7 +78,7 @@ permalink: /about/
 
 <hr>
 
-#### ***Frontlist***, 2014.10 - 현재
+### ***Frontlist***, 2014.10 - 현재
 - [Live Site](https://frontlist.net)
 - 프로젝트 내용
   - 글로벌 출판사들을 위한 판권 거래 정보 웹사이트
