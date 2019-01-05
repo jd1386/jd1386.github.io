@@ -34,7 +34,7 @@ tags: node
 cron job 내용을 우분투 등과 같은 유닉스 계열 OS에서는 터미널 상에서 `sudo crontab -e`로 crontab 파일을 열어서 내용을 수정하고 저장하면 된다. 
 
 <img src="/assets/img/crontab.png">
-#### crontab 파일에서 매주 월요일 02시 30분마다 ssl certificate renew한다
+#### crontab 파일에서 매주 월요일 02시 30분마다 ssl 인증서를 갱신한다.
 
 하지만 cron job 목록을 서버 코드와 같이 한번에 관리하는 것이 유지보수와 코드 예측 가능성 등의 이점이 있다. 따라서 Node 환경에서 cron job을 관리하고 실행할 수 있게끔 도와주는 `node cron`과 shell script를 직접 실행할 수 있게 해주는 `shell.js`를 활용해보자. 
 
