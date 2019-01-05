@@ -31,7 +31,12 @@ tags: node
 
 왼쪽부터 각각 순서대로 분, 시간, 일(월), 월, 일(주)를 뜻한다. 만약 Sunny 앱과 같이 매시간 특정 스크립트를 실행해야 한다면 `0 * * * *`으로 매시간을 나타낼 수 있고, 매달 1일의 오전 1시를 원한다면 `0 1 1 * *`와 같이 표현할 수 있다. 매년 12월 14일 0시는 `0 0 14 12 *`과 같이 표현할 수 있겠다. 더 자세한 cron syntax는 [cron tab guru](https://crontab.guru/)에서 확인할 수 있다. 
 
-cron job 내용을 우분투 등과 같은 유닉스 계열 OS에서는 터미널 상에서 `sudo crontab -e`로 crontab 파일을 열어서 내용을 수정하고 저장하면 된다. 하지만 cron job 목록을 서버 코드와 같이 한번에 관리하는 것이 유지보수와 코드 예측 가능성 등의 이점이 있다. 따라서 Node 환경에서 cron job을 관리하고 실행할 수 있게끔 도와주는 `node cron`과 shell script를 직접 실행할 수 있게 해주는 `shell.js`를 활용해보자. 
+cron job 내용을 우분투 등과 같은 유닉스 계열 OS에서는 터미널 상에서 `sudo crontab -e`로 crontab 파일을 열어서 내용을 수정하고 저장하면 된다. 
+
+<img src="/assets/img/crontab.png">
+#### crontab 파일에서 매주 월요일 02시 30분마다 ssl certificate renew한다
+
+하지만 cron job 목록을 서버 코드와 같이 한번에 관리하는 것이 유지보수와 코드 예측 가능성 등의 이점이 있다. 따라서 Node 환경에서 cron job을 관리하고 실행할 수 있게끔 도와주는 `node cron`과 shell script를 직접 실행할 수 있게 해주는 `shell.js`를 활용해보자. 
 
 <br>
 ### 필요한 모듈
