@@ -8,7 +8,7 @@ layout: default
     {% for post in paginator.posts %}
     <li>
       <h3 class="posts">
-        <a class="post-link" href="{{post.url | prepend: site.baseurl}}">
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
           {{ post.title }}
         </a>
       </h3>
@@ -40,9 +40,9 @@ layout: default
       {% if paginator.previous_page %}
       <a
         href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
-        >&laquo; Prev</a
+        >&laquo;</a
       >
-      {% else %} <span>&laquo; Prev</span> {% endif %} {% for page in
+      {% else %} <span>&laquo;</span> {% endif %} {% for page in
       (1..paginator.total_pages) %} {% if page == paginator.page %}
       <span class="webjeda">{{ page }}</span> {% elsif page == 1 %}
       <a href="/">{{ page }}</a> {% else %}
@@ -53,9 +53,9 @@ layout: default
       {% endif %} {% endfor %} {% if paginator.next_page %}
       <a
         href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"
-        >Next &raquo;</a
+        >&raquo;</a
       >
-      {% else %} <span>Next &raquo;</span> {% endif %}
+      {% else %} <span>&raquo;</span> {% endif %}
     </div>
     {% endif %}
   </ul>
