@@ -2,7 +2,8 @@
 layout: post
 title: sequelize cli로 seed data 생성하기
 date: 2019-01-19 13:00:00 +0900
-categories: node sequelize
+categories: blog
+tags: node sequelize
 ---
 
 루비온레일즈(Ruby on Rails)의 경우 `bundle exec rake db:seed` 명령을 통해 비어있는 데이터베이스에 데이터를 손쉽게 추가할 수 있다. 새롭게 데이터베이스를 만들었다거나 테이블을 새롭게 생성했을 때 당장에 필요한 샘플 데이터를 넣어야 할 일이 있다. 이를 테면 Articles라는 테이블을 만들었으면 기사 목록을 데이터로 넣어줘야 하는데, 테스트 환경이라 할 지라도 하나 하나 INSERT 하는 건 너무나도 귀찮은 일이다. 
