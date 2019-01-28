@@ -422,7 +422,7 @@ renderSubmitBtn = () => {
 3. state에 저장된 입력값을 validation 함수를 만들어서 검사한다.
 4. validation 함수 결과에 따라 유저에게 실시간으로 피드백을 줄 수 있다.
 5. 더 나아가 모든 인풋 필드의 validation이 통과되어야 폼 제출 버튼을 activate 할 수 있다.
-이번 프로젝트의 전체 코드는 [Github](https://github.com/jd1386/react-form-validation)에서 확인할 수 있다.
+이번 프로젝트의 전체 코드는 [Github](https://github.com/jd1386/react-form-validation)에서 확인할 수 있고 [라이브 데모](https://react-form-validation-6i6h1u8xu.now.sh/) 또한 확인할 수 있다.
 
 
 ## extend 할 만한 이슈
