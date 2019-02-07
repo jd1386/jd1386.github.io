@@ -20,7 +20,7 @@ React에서 애니메이션을 구현하기 위해 여러가지 유명한 라이
 
 다양한 종류의 애니메이션 효과가 있지만 대체적으로 사용법은 단순하다. `from`과 `to`에 애니메이션 효과를 넣고자 하는 타겟을 각각 넣어주면 된다. 아래 예시는 0부터 1까지 숫자가 커지는 애니메이션 효과가 생길 것이다.
 {% raw %}
-```coffee
+```jsx
 import { Spring } from 'react-spring';
 
 <Spring
@@ -45,7 +45,7 @@ import { Spring } from 'react-spring';
   - ThirdSegment.js
 
 #### App.js에서 각각의 하위 컴포넌트들을 \<TrackVisibility\>로 감싸준다.
-```coffee
+```jsx
 import React, { Component } from 'react';
 import './App.css';
 import TrackVisibility from 'react-on-screen';
@@ -76,7 +76,7 @@ App.js에서 \<TrackVisibility\>가 하위 컴포넌트에게 isVisible props을
 
 #### FirstSegment.js
 {% raw %}
-```coffee
+```jsx
 import React, { Component } from 'react';
 import { Spring, config } from 'react-spring';
 
@@ -117,7 +117,7 @@ export default class FirstSegment extends Component {
 
 #### SecondSegment.js
 {% raw %}
-```coffee
+```jsx
 import React, { Component } from 'react';
 import { Spring, config } from 'react-spring';
 
@@ -158,7 +158,7 @@ export default class SecondSegment extends Component {
 
 #### ThirdSegment.js
 {% raw %}
-```coffee
+```jsx
 import React, { Component } from 'react';
 import { Spring, config } from 'react-spring';
 

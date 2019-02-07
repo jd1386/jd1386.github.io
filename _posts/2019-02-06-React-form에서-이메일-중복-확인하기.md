@@ -81,7 +81,7 @@ $ yarn add axios
 이제 폼에 살을 더해보자. `App.js`에 불필요한 내용은 모두 삭제하고 렌더 함수만 남겨놓자. 그리고 렌더 함수를 다음 내용으로 교체한다.
 
 #### App.js
-```coffee
+```jsx
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
@@ -128,7 +128,7 @@ render() {
 `handleOnChange` 함수는 유저가 이메일 인풋 필드에서 입력한 값을 전달받아 state에 저장하는 함수이다. 이를 위해 우선 state에 typedEmail과 isDuplicateUser를 추가해보자.
 
 #### App.js
-```coffee
+```jsx
 state = {
   typedEmail: '',
   isDuplicateUser: false
@@ -138,7 +138,7 @@ state = {
 그 다음 `handleOnChange` 함수를 완성해보자. 유저가 이메일 인풋 필드에 입력한 값을 인자로 전달받아서 해당 이메일을 [JSON Placeholder 유저 목록 API](https://jsonplaceholder.typicode.com/users)에서 검색한다. 해당 이메일이 있으면 중복 유저라는 뜻이므로 isDuplicateUser 상태값을 true로 바꿔준다. 해당 이메일이 없으면 신규 유저이므로 isDuplicateUser 상태값을 false로 바꿔준다.
 
 #### handleOnChange 함수
-```coffee
+```jsx
 handleOnChange(typedEmail) {
   axios.get('https://jsonplaceholder.typicode.com/users').then(response => {
     const users = response.data;
@@ -161,7 +161,7 @@ handleOnChange(typedEmail) {
 `handleOnChange` 함수를 async 함수로 변환 후 사용하는 것도 가능하다.
 
 #### handleOnChange async 함수
-```coffee
+```jsx
 async handleOnChange(typedEmail) {
   const response = await axios.get(
       'https://jsonplaceholder.typicode.com/users'
@@ -188,7 +188,7 @@ async handleOnChange(typedEmail) {
 `emailInputClassName` 함수는 최종적으로 빈 문자열과 is-invalid, is-valid 문자열을 반환하는 함수이다. 유저의 이메일 입력값이 없으면 빈 문자열을 반환하고, 입력값은 있지만 isDuplicateUser인 경우 'is-invalid'를 isDuplicateUser가 아닌 경우 'is-valid'를 반환한다.
 
 #### emailInputClassName 함수
-```coffee
+```jsx
 emailInputClassName() {
   if (this.state.typedEmail) {
     return this.state.isDuplicateUser ? 'is-invalid' : 'is-valid';
@@ -201,7 +201,7 @@ emailInputClassName() {
 `renderFeedbackMessage` 함수는 `emailInputClassName` 함수와 매우 유사하다. 다른 점은 isDuplicateUser인 경우 이미 등록되어 있는 이메일이라는 메세지를 담은 div를 리턴하고 isDuplicateUser가 아닌 경우 사용할 수 있는 이메일이라는 메세지를 담은 div를 리턴한다는 점이다. invalid-feedback과 valid-feedback 클래스는 모두 Bootstrap에서 지원하는 클래스명이다.
 
 #### renderFeedbackMessage 함수
-```coffee
+```jsx
 renderFeedbackMessage() {
   if (this.state.typedEmail) {
     return this.state.isDuplicateUser ? (

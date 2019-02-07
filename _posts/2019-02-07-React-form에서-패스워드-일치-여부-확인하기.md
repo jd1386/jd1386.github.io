@@ -75,7 +75,7 @@ body {
 이제 폼에 살을 더해보자. `App.js`에 불필요한 내용은 모두 삭제하고 렌더 함수만 남겨놓자. 그리고 렌더 함수를 다음 내용으로 교체한다.
 
 #### App.js
-```coffee
+```jsx
 import React, { Component } from 'react';
 import './App.css';
 
@@ -132,7 +132,7 @@ render() {
 `handleOnPasswordInput`와 `handleOnConfirmPasswordInput` 함수는 유저가 각각의 필드에서 입력한 값을 전달받아 state에 저장하는 함수이다. 이를 위해 우선 state에 password와 confirmPassword를 추가해보자.
 
 #### App.js
-```coffee
+```jsx
 state = {
   password: '',
   confirmPassword: ''
@@ -142,14 +142,14 @@ state = {
 그 다음 각각의 함수를 완성해보자. 
 
 #### handleOnPasswordInput 함수
-```coffee
+```jsx
 handleOnPasswordInput(passwordInput) {
   this.setState({ password: passwordInput });
 }
 ```
 
 #### handleOnConfirmPasswordInput 함수
-```coffee
+```jsx
 handleOnConfirmPasswordInput(confirmPasswordInput) {
   this.setState({ confirmPassword: confirmPasswordInput });
 }
@@ -159,7 +159,7 @@ handleOnConfirmPasswordInput(confirmPasswordInput) {
 유저가 password를 입력하고나서 confirmPassword를 입력할 때 두 개가 정확히 일치하는지 여부를 확인해야 한다. `doesPasswordMatch` 함수가 일치 여부를 판별해서 true나 false를 반환한다.
 
 #### doesPasswordMatch 함수
-```coffee
+```jsx
 doesPasswordMatch() {
   const { password, confirmPassword } = this.state;
   return password === confirmPassword;
@@ -170,7 +170,7 @@ doesPasswordMatch() {
 confirmPasswordInput 인풋 필드에 녹색(성공)과 빨간색(에러)의 스타일링을 추가하기 위해서는 클래스명을 반환하는 함수가 필요하다. `confirmPasswordClassName` 함수는 `doesPasswordMatch` 함수의 실행 결과에 따라 true면 is-valid, false면 is-invalid 클래스를 반환한다.
 
 #### confirmPasswordClassName 함수
-```coffee
+```jsx
 confirmPasswordClassName() {
   const { confirmPassword } = this.state;
 
@@ -184,7 +184,7 @@ confirmPasswordClassName() {
 `renderFeedbackMessage` 함수는 유저에게 패스워드가 일치하는지 여부를 피드백 주는 기능을 한다. 유저가 confirmPassword를 입력하고 password와 일치하지 않을 때 'invalid-feedback'이라는 클래스를 가진 div안에 메세지를 넣어서 반환한다.
 
 #### renderFeedbackMessage 함수
-```coffee
+```jsx
 renderFeedbackMessage() {
   const { confirmPassword } = this.state;
 

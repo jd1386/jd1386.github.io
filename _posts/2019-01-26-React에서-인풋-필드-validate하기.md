@@ -50,7 +50,7 @@ tags: react form
 
 그리고 `App.js`에서 불필요한 부분을 모두 제거하고 다음 부분만 남겨두자.
 
-```coffee
+```jsx
 import React, { Component } from 'react';
 import './App.css';
 
@@ -77,7 +77,7 @@ $ cd form-validation && yarn start
 [Bootstrap 홈페이지](https://getbootstrap.com/docs/4.2/components/forms/)에 다양한 폼 정보와 예제 코드가 있다. 우린 유저의 이름과 이메일 그리고 휴대폰 번호를 입력받는 폼을 만들 것이기 때문에 `App.js` 파일에 다음과 같이 폼을 추가해보자.
 
 #### App.js
-```coffee
+```jsx
 import React, { Component } from 'react';
 import './App.css';
 
@@ -166,7 +166,7 @@ state = {
 유저가 이름을 입력하면 onChange 이벤트를 통해 nameEntered에 저장될 것이고 저장된 nameEntered는 validation 로직을 통해 유효 여부가 isNameValid에 저장될 것이다. 그럼 이제 onChange 이벤트를 만들어보자. 먼저 `App.js`에서 이름 인풋 필드에 다음과 같이 onChange 이벤트를 넣어준다.
 
 #### App.js
-```coffee
+```jsx
 <div className="form-group">
   <label htmlFor="nameInput">이름</label>
   <input
@@ -183,7 +183,7 @@ state = {
 이름 인풋 필드에 변화가 발생하면, 즉 유저가 새로운 값을 입력할 때마다 onChange 이벤트를 통해 validateName 함수에 해당 인풋 필드의 입력값이 인자로 전달되어 실행된다. validateName 함수가 가장 중요한 일인 유저의 이름 입력값의 유효 여부를 판단할 것이다. 그럼 validateName 함수를 `App.js`에 만들어보자.
 
 #### App.js
-```coffee
+```jsx
 validateName = nameEntered => {
   if (nameEntered.length > 1) {
     this.setState({
@@ -218,7 +218,7 @@ className={`form-control ${this.inputClassNameHelper(this.isEnteredNameValid())}
 그럼 `isEnteredNameValid()` 함수와 `inputClassNameHelper()` 함수를 만들어보자.
 
 #### App.js
-```coffee
+```jsx
 isEnteredNameValid = () => {
   const { nameEntered, isNameValid } = this.state;
 
@@ -251,7 +251,7 @@ inputClassNameHelper = boolean => {
 이름 validation과 방법은 똑같다. 먼저 폼에 이메일 주소를 입력할 새로운 인풋 필드를 만들어보자. 그리고 onChange 이벤트에 `validateEmail()`이라는 함수가 실행되도록 하자.
 
 #### App.js
-```coffee
+```jsx
 <div className="form-group">
   <label htmlFor="emailInput">이메일</label>
   <input
@@ -269,7 +269,7 @@ inputClassNameHelper = boolean => {
 이메일 인풋에 유저가 입력을 시작하면 onChange 이벤트가 시작되어 인풋 필드의 값이 `validateEmail()` 함수의 인자로 전달되어 실행될 것이다. 그럼 이젠 `validateEmail()` 함수를 만들어보자.
 
 #### App.js
-```coffee
+```jsx
 validateEmail = emailEntered => {
   const emailRegExp = /^[\w-]+(\.[\w-]+)*@([a-z0-9-]+(\.[a-z0-9-]+)*?\.[a-z]{2,6}|(\d{1,3}\.){3}\d{1,3})(:\d{4})?$/;
 
@@ -292,7 +292,7 @@ validateEmail = emailEntered => {
 
 `isEnteredEmailValid()` 함수는 `isEnteredNameVaild()` 함수와 같은 구조를 지녔다.
 
-```coffee
+```jsx
 isEnteredEmailValid = () => {
   const { emailEntered, isEmailValid } = this.state;
 
@@ -314,7 +314,7 @@ className={`form-control ${this.inputClassNameHelper(this.isEnteredEmailValid())
 이메일 validation을 문제없이 했다면 휴대폰 번호도 어렵지 않다. 먼저 다음과 같이 폼에 휴대폰 번호 인풋 필드를 추가하자.
 
 #### App.js
-```coffee
+```jsx
 <div className="form-group">
   <label htmlFor="phoneNumberInput">휴대폰 번호</label>
   <input
@@ -331,7 +331,7 @@ className={`form-control ${this.inputClassNameHelper(this.isEnteredEmailValid())
 유저가 휴대폰 번호를 입력할 때마다 실행될 `validatePhoneNumber()` 함수를 만들어보자.
 
 #### App.js
-```coffee
+```jsx
 validatePhoneNumber = phoneNumberInput => {
   const phoneNumberRegExp = /^\d{3}-\d{3,4}-\d{4}$/;
 
@@ -350,7 +350,7 @@ validatePhoneNumber = phoneNumberInput => {
 ```
 
 #### App.js
-```coffee
+```jsx
 isEnteredPhoneNumberValid = () => {
   const { phoneNumberEntered, isPhoneNumberValid } = this.state;
 
@@ -368,7 +368,7 @@ isEnteredPhoneNumberValid = () => {
 
 먼저 3개의 인풋 필드의 유효성을 모두 통과했는지 확인할 수 있는 함수 `isEveryFieldValid()`가 필요하다.
 
-```coffee
+```jsx
 isEveryFieldValid = () => {
   const { isNameValid, isEmailValid, isPhoneNumberValid } = this.state;
   return isNameValid && isEmailValid && isPhoneNumberValid;
@@ -377,7 +377,7 @@ isEveryFieldValid = () => {
 
 그리고 `isEveryFieldValid()` 함수 결과에 따라 폼 제출 버튼을 렌더할 또다른 함수 `renderSubmitBtn()`을 만들어보자.
 
-```coffee
+```jsx
 renderSubmitBtn = () => {
   if (this.isEveryFieldValid()) {
     return (
@@ -397,7 +397,7 @@ renderSubmitBtn = () => {
 
 거의 다되었다. 마지막으로 폼 하단 제출 버튼을 지우고 그 자리에 `renderSubmitBtn()` 함수 실행하자.
 
-```coffee
+```jsx
 {this.renderSubmitBtn()}
 ```
 
