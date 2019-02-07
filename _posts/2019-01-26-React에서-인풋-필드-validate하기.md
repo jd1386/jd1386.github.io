@@ -429,7 +429,8 @@ renderSubmitBtn = () => {
 ## extend 할 만한 이슈
 - 유저가 이메일을 입력할 때마다 서버에 중복 이메일이 없는 지 확인해서 피드백을 주는 것도 구현해보면 좋을 것 같다.
 
-### React form 관련 다른 글
+### React form 관련 글
 * [React에서 인풋 필드 validate하기]({% post_url  2019-01-26-React에서-인풋-필드-validate하기 %})
 * [React form에서 이메일 중복 확인하기]({% post_url  2019-02-06-React-form에서-이메일-중복-확인하기 %})
-* [React form에서 패스워드 일치 여부 확인하기]({% post_url  2019-02-07-React-form에서-패스워드-일치-여부-확인하기 %})
+* [React form에서 패스워드 일치 여부 확인하기]({% post_url 2019-02-07-React-form에서-패스워드-일치-여부-확인하기 %})
+* [React form에서 zxcvbn 모듈을 이용해 좀더 강력한 패스워드를 만들도록 유도하기]({% post_url 2019-02-08-React-form에서-zxcvbn-모듈을-이용해-좀더-강력한-패스워드를-만들도록-유도하기 %})

@@ -19,10 +19,11 @@ tags: react form
   <img src="/assets/img/react-form-duplicate-email-check-1.png">
 </div>
 
-### React form 관련 다른 글
+### React form 관련 글
 * [React에서 인풋 필드 validate하기]({% post_url  2019-01-26-React에서-인풋-필드-validate하기 %})
 * [React form에서 이메일 중복 확인하기]({% post_url  2019-02-06-React-form에서-이메일-중복-확인하기 %})
-* [React form에서 패스워드 일치 여부 확인하기]({% post_url  2019-02-07-React-form에서-패스워드-일치-여부-확인하기 %})
+* [React form에서 패스워드 일치 여부 확인하기]({% post_url 2019-02-07-React-form에서-패스워드-일치-여부-확인하기 %})
+* [React form에서 zxcvbn 모듈을 이용해 좀더 강력한 패스워드를 만들도록 유도하기]({% post_url 2019-02-08-React-form에서-zxcvbn-모듈을-이용해-좀더-강력한-패스워드를-만들도록-유도하기 %})
 
 ## Project Setup
 새로운 예제 앱을 만들자.
@@ -226,7 +227,8 @@ renderFeedbackMessage() {
 - [Github repository](https://github.com/jd1386/react-form-validation-duplicate-email-demo)
 - [Live demo](https://react-form-validation-duplicate-email-demo-nq0viiq3s.now.sh/)
 
-### React form 관련 다른 글
+### React form 관련 글
 * [React에서 인풋 필드 validate하기]({% post_url  2019-01-26-React에서-인풋-필드-validate하기 %})
 * [React form에서 이메일 중복 확인하기]({% post_url  2019-02-06-React-form에서-이메일-중복-확인하기 %})
-* [React form에서 패스워드 일치 여부 확인하기]({% post_url  2019-02-07-React-form에서-패스워드-일치-여부-확인하기 %})
+* [React form에서 패스워드 일치 여부 확인하기]({% post_url 2019-02-07-React-form에서-패스워드-일치-여부-확인하기 %})
+* [React form에서 zxcvbn 모듈을 이용해 좀더 강력한 패스워드를 만들도록 유도하기]({% post_url 2019-02-08-React-form에서-zxcvbn-모듈을-이용해-좀더-강력한-패스워드를-만들도록-유도하기 %})
