@@ -23,7 +23,7 @@ tags: react form
 * [React에서 인풋 필드 validate하기]({% post_url  2019-01-26-React에서-인풋-필드-validate하기 %})
 * [React form에서 이메일 중복 확인하기]({% post_url  2019-02-06-React-form에서-이메일-중복-확인하기 %})
 * [React form에서 패스워드 일치 여부 확인하기]({% post_url 2019-02-07-React-form에서-패스워드-일치-여부-확인하기 %})
-* [React form에서 zxcvbn 모듈을 이용해 좀더 강력한 패스워드를 만들도록 유도하기]({% post_url 2019-02-08-React-form에서-zxcvbn-모듈을-이용해-좀더-강력한-패스워드를-만들도록-유도하기 %})
+* [React form에서 zxcvbn 모듈을 이용해 좀더 안전한 패스워드를 만들도록 유도하기]({% post_url 2019-02-08-React-form에서-zxcvbn-모듈을-이용해-좀더-안전한-패스워드를-만들도록-유도하기 %})
 
 ## Project Setup
 새로운 예제 앱을 만들자.
@@ -231,4 +231,4 @@ renderFeedbackMessage() {
 * [React에서 인풋 필드 validate하기]({% post_url  2019-01-26-React에서-인풋-필드-validate하기 %})
 * [React form에서 이메일 중복 확인하기]({% post_url  2019-02-06-React-form에서-이메일-중복-확인하기 %})
 * [React form에서 패스워드 일치 여부 확인하기]({% post_url 2019-02-07-React-form에서-패스워드-일치-여부-확인하기 %})
-* [React form에서 zxcvbn 모듈을 이용해 좀더 강력한 패스워드를 만들도록 유도하기]({% post_url 2019-02-08-React-form에서-zxcvbn-모듈을-이용해-좀더-강력한-패스워드를-만들도록-유도하기 %})
+* [React form에서 zxcvbn 모듈을 이용해 좀더 안전한 패스워드를 만들도록 유도하기]({% post_url 2019-02-08-React-form에서-zxcvbn-모듈을-이용해-좀더-안전한-패스워드를-만들도록-유도하기 %})
