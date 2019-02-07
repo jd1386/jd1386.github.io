@@ -197,15 +197,14 @@ renderFeedbackMessage() {
 }
 ```
 
-이제 다 되었다. 데모 프로젝트를 브라우저에서 띄우고 [JSON Placeholder 유저 목록 API](https://jsonplaceholder.typicode.com/users)에 저장되어 있는 이메일 Sincere@april.biz과 그렇지 않은 이메일 Sincere@april.co를 각각 입력해보자. 저장되어 있는 이메일인 경우 이미 등록되어 있는 이메일이라는 메세지와 함께 x자 마크와 빨간색 border가 뜰 것이다. 반대로 저장되어 있지 않은 이메일인 경우 사용할 수 있는 이메일이라는 메세지가 뜰 것이다.
+## 프로젝트 완성
+이제 다 되었다. password 필드와 passwordConfirmation 필드를 동일하게 입력해보고 다르게도 입력해보자. 각각의 경우마다 피드백 메세지가 렌더되는 것을 확인할 수 있다.
 
-#### 완성된 이메일 중복 확인 기능
+#### 완성된 패스워드 일치 여부 확인 기능
 <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;">
-  <img src="/assets/img/react-form-duplicate-email-check-2.png">
-  <img src="/assets/img/react-form-duplicate-email-check-1.png">
+  <img src="/assets/img/2019-02-07-01.png">
+  <img src="/assets/img/2019-02-07-02.png">
 </div>
-
-이번 프로젝트에서 한 가지 유의할 점은 유저가 인풋 필드에 한글자 한글자 입력할 때마다 `handleOnChange` 함수가 실행되어 [JSON Placeholder 유저 목록 API](https://jsonplaceholder.typicode.com/users)에 매 글자마다 검색이 이뤄진다는 점이다. 서버에 부하가 갈 수 있으므로 [lodash의 throttle 함수](https://lodash.com/docs/4.17.11#throttle)를 이용해서 제한을 거는 것이 좋다.
 
 
 - [Github respository](https://github.com/jd1386/react-form-password-confirmation-demo)
