@@ -10,7 +10,7 @@ tags: react form
 
 대부분의 애플리케이션에서 유저의 이메일 정보는 데이터베이스에 저장되어 있을 것이다. 하지만 이번 예제 프로젝트에서는 데이터베이스와 API를 직접 만들기보다 [JSON Placeholder](https://jsonplaceholder.typicode.com/)에서 제공하는 [유저 목록 API](https://jsonplaceholder.typicode.com/users)를 이용해서 유저 이메일 검색 API를 사용한다고 가정해서 진행해보도록 하자. 
 
-- [Github respository](https://github.com/jd1386/react-form-validation-duplicate-email-demo)
+- [Github repository](https://github.com/jd1386/react-form-validation-duplicate-email-demo)
 - [Live demo](https://react-form-validation-duplicate-email-demo-nq0viiq3s.now.sh/)
 
 #### 완성된 이메일 중복 확인 기능
@@ -223,7 +223,7 @@ renderFeedbackMessage() {
 이번 프로젝트에서 한 가지 유의할 점은 유저가 인풋 필드에 한글자 한글자 입력할 때마다 `handleOnChange` 함수가 실행되어 [JSON Placeholder 유저 목록 API](https://jsonplaceholder.typicode.com/users)에 매 글자마다 검색이 이뤄진다는 점이다. 서버에 부하가 갈 수 있으므로 [lodash의 throttle 함수](https://lodash.com/docs/4.17.11#throttle)를 이용해서 제한을 거는 것이 좋다.
 
 
-- [Github respository](https://github.com/jd1386/react-form-validation-duplicate-email-demo)
+- [Github repository](https://github.com/jd1386/react-form-validation-duplicate-email-demo)
 - [Live demo](https://react-form-validation-duplicate-email-demo-nq0viiq3s.now.sh/)
 
 ### React form 관련 다른 글

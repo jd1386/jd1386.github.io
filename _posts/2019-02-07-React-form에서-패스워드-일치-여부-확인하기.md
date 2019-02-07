@@ -12,7 +12,7 @@ tags: react form
 
 이번 글에서는 리액트를 이용해서 폼에서 유저가 입력하는 패스워드가 제대로 입력되었는지 확인하고 그 결과를 유저에게 피드백해주는 기능을 만들어보자.
 
-- [Github respository](https://github.com/jd1386/react-form-password-confirmation-demo)
+- [Github repository](https://github.com/jd1386/react-form-password-confirmation-demo)
 - [Live demo](https://react-form-password-confirmation-bftg0rvv4.now.sh/)
 
 #### 완성된 패스워드 일치 여부 확인 기능
@@ -207,7 +207,7 @@ renderFeedbackMessage() {
 </div>
 
 
-- [Github respository](https://github.com/jd1386/react-form-password-confirmation-demo)
+- [Github repository](https://github.com/jd1386/react-form-password-confirmation-demo)
 - [Live demo](https://react-form-password-confirmation-bftg0rvv4.now.sh/)
 
 ### React form 관련 글
