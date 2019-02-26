@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="/assets/img/profile.jpeg" width="200" class="profile-image">
+<img src="/assets/img/profile_img.jpeg" width="500">
 ### 이정도 (Jungdo Lee)
 - email <mailto:lee.jungdo@gmail.com>
 - github <a href="https://github.com/jd1386" target="_blank">jd1386</a>
@@ -25,8 +25,29 @@ permalink: /about/
 - Web Scraper using Selenium, Cheerio, and etc.
 
 ## Projects
+### ***KoreanJSON***, 2019.02
+- [Live Site](https://koreanjson.com), [Github](https://github.com/jd1386/korean-json)
+- 프로젝트 내용
+  - Lorem Ipsum보다 리얼한 한국어 JSON 데이터를 제공하는 Rest API
+- 관련 포스트 
+  - [KoreanJSON.com을 만들었다]({% post_url 2019-02-24-KoreanJSON.com을-만들었다 %})
+- 기술 스택
+  - Node, Express
+  - MySQL, Sequelize
+  - AWS Lightsail
+  - Handlebars, Bootstrap, jQuery
+  - Mocha, Chai, Chai-Http
+- 수행 업무
+  - 프로젝트 기획
+  - 각 resource별 API 아키텍쳐 설계 및 구현
+  - 전체 개발
+  - Bootstrap을 이용해 페이지 디자인
+  - jQuery 및 fetch API를 이용해 유저 interaction 구현 
+  - Mocha, Chai, Chai-Http 등을 이용해 API 테스트 케이스 작성
+
 ### ***LearnCo***, 2018.12 - 현재
-- 내용: [코드스테이츠](https://codestates.com) 수강생들을 위한 LMS (Learning Management System)
+- 프로젝트 내용 
+  - [코드스테이츠](https://codestates.com) 수강생들을 위한 LMS (Learning Management System)
 - 세부 내용은 향후 추가 예정
 
 ### ***BlockPang***, 2018.11 - 2018.12
