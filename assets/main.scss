@@ -132,8 +132,12 @@ input[type='checkbox' i] {
   display: inline;
 }
 
+pre {
+  border: none;
+}
+
 .highlighter-rouge .highlight {
-  background: #eee;
+  background: white;
 }
 
 code {
