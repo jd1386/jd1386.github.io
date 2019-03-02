@@ -16,8 +16,8 @@ permalink: /about/
 - Node.js/Express
 - Ruby/Ruby on Rails
 - PostgreSQL, MySQL, MongoDB
-- jQuery, HTML, CSS, SCSS, Git
-- AWS EC2, S3, Cloudfront, LightSail, Route 53
+- HTML, CSS, SCSS, jQuery, Git
+- AWS EC2, S3, Cloudfront, Lightsail, Route 53
 - DigitalOcean
 - Ubuntu 14.04+
 - Redis
