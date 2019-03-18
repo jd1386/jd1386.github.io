@@ -175,4 +175,4 @@ module.exports = {
 
 <img src="/assets/img/2019-03-18-success.png">
 
-Sequelize CLI는 편해서 잘 쓰고 있긴한데 몇몇 직관적이지 않은 부분이 있어서 조금 아쉽다. 이럴 때면 Ruby on Rails의 [ActiveRecord](https://edgeguides.rubyonrails.org/active_record_migrations.html)가 자체 지원하는 마이그레이션 방식이 돌이켜보면 굉장히 직관적이고 훌륭했다는 생각이 든다. Sequelize CLI도 기본 syntax와 설정 방식 등 많은 부분이 ActiveRecord로부터 많은 영향을 받은 것으로 보인다. 
+Sequelize CLI는 편해서 잘 쓰고 있긴한데 몇몇 직관적이지 않은 부분이 있어서 조금 아쉽다. 이럴 때면 Ruby on Rails의 [ActiveRecord](https://edgeguides.rubyonrails.org/active_record_migrations.html)가 자체 지원하는 마이그레이션 방식이 돌이켜보면 굉장히 직관적이고 훌륭했다는 생각이 든다. Sequelize CLI도 기본 syntax와 설정 방식 등 많은 부분이 ActiveRecord로부터 영향을 받은 것으로 보인다. 
