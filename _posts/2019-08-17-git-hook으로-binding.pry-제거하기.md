@@ -12,7 +12,8 @@ tags: ruby
 
 부끄럽지만 나도 최근 4개월간 이런 실수를 정확히 2번했다. 다행히 실서버의 어드민 기능에 코드가 배포되었기 망정이지 유저가 사용하는 코드였다면 유저는 영문도 모르고 아무것도 실행되지 않는 화면을 멍하니 바라볼 수 밖에 없었을 거다. 
 
-그래서 내 나름대로 대책을 마련하기 위해서 `git hooks`에 작업한 파일 내에서 binding.pry를 scan하는 기능이 있으면 좋겠다고 생각했고, 찾아보니 역시나 이미 스크립트가 있었다. (참조: [https://gist.github.com/wacko/62560b45c1d191859d6b](https://gist.github.com/wacko/62560b45c1d191859d6b)) 
+그래서 내 나름대로 대책을 마련하기 위해서 `git hooks`에 작업한 파일 내에서 binding.pry를 scan하는 기능이 있으면 좋겠다고 생각했고, 찾아보니 역시나 이미 스크립트가 있었다. 
+([참조](https://gist.github.com/wacko/62560b45c1d191859d6b)) 
 
 이번 글에서는 루비를 이용해서 git hooks에 binding.pry를 스캔하는 스크립트를 추가해보자. 루비가 설치되어 있지 않다면 [bash 스크립트](https://gist.github.com/guilherme/9604324) 또는 [node 스크립트](https://medium.com/@Sergeon/using-javascript-in-your-git-hooks-f0ce09477334)를 이용해도 되겠다. 
 
@@ -65,5 +66,7 @@ end
 `cd .git/hooks && chmod +x pre-commit`
 
  
-
 간단하게 위 두단계만 거치면 이제 binding.pry가 코드에 실수로 배포되는 일은 없을 것이다. 루비를 사용하든 노드를 사용하든 git hooks는 사용할 수 있기 때문에 필요에 따라 다르게 적용할 수도 있을 것이다.
+
+<img src="/assets/img/2019-08-18-01.png">
+위와 같이 코드에 console.log가 있어서 커밋할 수 없다고 에러를 반환한다.
