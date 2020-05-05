@@ -1,7 +1,7 @@
 ---
 ---
 
-@import 'minima';
+@import "minima";
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -87,7 +87,7 @@ h3.posts {
 
 hr {
   margin: 30px auto;
-  border: 1px dashed #868686;
+  border: 0.5px solid #d2d2d2;
 }
 
 /* pagination */
@@ -124,7 +124,7 @@ element.style {
   font-weight: 500;
 }
 
-input[type='checkbox' i] {
+input[type="checkbox" i] {
   font-size: 1em;
 }
 
