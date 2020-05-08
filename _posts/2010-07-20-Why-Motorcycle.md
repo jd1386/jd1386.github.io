@@ -23,4 +23,4 @@ tags: thoughts
 그들의 아주 작은 시간으로, 그들 삶의 작은 조각으로, 그들 삶의 작은 기억으로  
 그렇게 남고 싶은거야.  
 
-<object height="344" style="background-image: url(http://i1.ytimg.com/vi/hThG0lhUMRY/hqdefault.jpg);" width="425"><param name="movie" value="http://www.youtube.com/v/hThG0lhUMRY&amp;hl=ko_KR&amp;fs=1"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube.com/v/hThG0lhUMRY&amp;hl=ko_KR&amp;fs=1" width="425" height="344" allowscriptaccess="never" allowfullscreen="true" wmode="transparent" type="application/x-shockwave-flash"></embed></object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hThG0lhUMRY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
