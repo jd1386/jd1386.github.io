@@ -143,3 +143,27 @@ pre {
 code {
   background: #eee;
 }
+
+.page-navigation {
+  font-size: 1.1rem;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.page-navigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.page-navigation a div {
+  display: block;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.page-navigation .next {
+  text-align: right;
+}
